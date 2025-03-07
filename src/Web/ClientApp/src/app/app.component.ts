@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { NavMenuComponent } from './nav-menu/nav-menu.component'
 import { RouterModule } from '@angular/router';
 
@@ -8,5 +8,11 @@ import { RouterModule } from '@angular/router';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
+  constructor(private renderer: Renderer2) { }
+
   title = 'app';
+
+  toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+  }
 }

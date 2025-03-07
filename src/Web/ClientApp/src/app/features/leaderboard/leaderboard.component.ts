@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatTableModule } from '@angular/material/table';
-
+import { IntroductionComponent } from '../introduction/introduction.component'
 
 @Component({
   selector: 'app-leaderboard',
   standalone: true,
-  imports: [CommonModule, MatTableModule],
+  imports: [CommonModule, MatTableModule, IntroductionComponent],
   templateUrl: './leaderboard.component.html',
-  styleUrl: './leaderboard.component.css',
+  styleUrl: './leaderboard.component.scss',
 })
 export class LeaderboardComponent {
   displayedColumns: string[] = ['position', 'playerName', 'gamesPlayed', 'totalScore'];
