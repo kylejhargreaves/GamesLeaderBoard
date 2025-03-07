@@ -396,3 +396,44 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Ignore node_modules (Angular & TypeScript)
+node_modules/
+dist/
+coverage/
+.vscode/
+*.log
+*.tsbuildinfo
+
+# Ignore environment files
+src/environments/*.ts
+
+# Ignore user specific files
+
+.vs/
+.idea/
+*.user
+*.suo
+*.ncb
+*.log
+*.DS_Store
+
+# Angular build artifacts
+.angular/
+.angular-cache/
+tmp/
+
+# Ignore compiled files
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# Ignore compiled TypeScript
+*.js
+*.map
