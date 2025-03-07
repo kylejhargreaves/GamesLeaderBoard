@@ -15,8 +15,8 @@ export class LeaderboardComponent {
 
   //replace later to two data sources
   dataSource = [
-    { position: 1, name: 'Alice', score: 100 },
-    { position: 2, name: 'Bob', score: 95 },
-    { position: 3, name: 'Charlie', score: 90 }
+    { position: 1, playerName: 'Alice',  gamesPlayed:6,  totalScore: 100 },
+    { position: 2, playerName: 'Bob',    gamesPlayed:6,  totalScore: 95 },
+    { position: 3, playerName: 'Charlie',gamesPlayed:6,  totalScore: 90 }
   ];
 }

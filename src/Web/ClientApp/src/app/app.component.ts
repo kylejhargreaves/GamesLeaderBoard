@@ -13,6 +13,21 @@ export class AppComponent {
   title = 'app';
 
   toggleTheme() {
-    document.body.classList.toggle('dark-theme');
+    const body = document.body;
+    if (body.classList.contains('dark-theme')) {
+      body.classList.remove('dark-theme');
+      localStorage.setItem('theme', 'light');
+    }
+    else {
+      body.classList.add('dark-theme');
+      localStorage.setItem('theme', 'dark');
+    }
+  }
+
+  ngOnInit() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      document.body.classList.add('dark-theme');
+    }
   }
 }

@@ -16,18 +16,38 @@ code {
 }
 
 :root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --background-color: #ffffff;
-  --text-color: #000000;
+  --primary-color: var(--mab-primary-light);
+  --secondary-color: var(--mab-secondary-light);
+  --background-color: var(--mab-background-color-light);
+  --text-color: var(--mab-primary-text-light);
+  --border-color: var(--mab-secondary-light);
+  // primary
+  --mab-primary-light: #FFFFFF;
+  --mab-secondary-light: #E1E1E1;
+  --mab-primary-text-light: #000000;
+  --mab-background-color-light: var(--mab-primary-light);
+  // secondary
+  --mab-primary-dark: #1e99e5;
+  --mab-secondary-dark: #525252;
+  --mab-primary-text-dark: #000000;
+  --mab-background-color-dark: var(--mab-primary-dark);
+  // sizing
+  --card-max-width: 453px;
+  --card-width: 90%;
+  --card-padding: 16px;
+  --card-border-radius: 12px;
+  --card-border: 1px solid var(--border-color);
+  --card-margin: 30px auto 0 20px;
+
 }
 
 /* Alternative Mode */
 .dark-theme {
-  --primary-color: #1e88e5;
-  --secondary-color: #424242;
-  --background-color: #121212;
-  --text-color: #ffffff;
+  --primary-color: var(---mab-primary-dark);
+  --secondary-color: var(---mab-secondary-dark);
+  --background-color: var(---mab-background-color-dark);
+  --text-color: var(---mab-background-color-dark);
+  --border-color: var(--mab-secondary-dark);
 }
 
 .btn-primary {
@@ -35,9 +55,3 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-
-/* Importing Bootstrap SCSS file. */
-@import "node_modules/bootstrap/scss/bootstrap";
-
-/* Importing Bootstrap Icons SCSS file. */
-@import "node_modules/bootstrap-icons/font/bootstrap-icons";
