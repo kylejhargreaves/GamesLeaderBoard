@@ -3,7 +3,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Provide sufficient contrast against white background */
-a {
+/*a {
   color: #0366d6;
 }
 
@@ -13,14 +13,9 @@ a {
 
 code {
   color: #e01a76;
-}
+}*/
 
 :root {
-  --primary-color: var(--mab-primary-light);
-  --secondary-color: var(--mab-secondary-light);
-  --background-color: var(--mab-background-color-light);
-  --text-color: var(--mab-primary-text-light);
-  --border-color: var(--mab-secondary-light);
   // primary
   --mab-primary-light: #FFFFFF;
   --mab-secondary-light: #E1E1E1;
@@ -31,6 +26,12 @@ code {
   --mab-secondary-dark: #525252;
   --mab-primary-text-dark: #000000;
   --mab-background-color-dark: var(--mab-primary-dark);
+  // theme
+  --primary-color: var(--mab-primary-light);
+  --secondary-color: var(--mab-secondary-light);
+  --background-color: var(--mab-background-color-light);
+  --text-color: var(--mab-primary-text-light);
+  --border-color: var(--mab-secondary-light);
   // sizing
   --card-max-width: 453px;
   --card-width: 90%;
@@ -38,20 +39,19 @@ code {
   --card-border-radius: 12px;
   --card-border: 1px solid var(--border-color);
   --card-margin: 30px auto 0 20px;
-
 }
 
 /* Alternative Mode */
 .dark-theme {
-  --primary-color: var(---mab-primary-dark);
-  --secondary-color: var(---mab-secondary-dark);
-  --background-color: var(---mab-background-color-dark);
-  --text-color: var(---mab-background-color-dark);
+  --primary-color: var(--mab-primary-dark);
+  --secondary-color: var(--mab-secondary-dark);
+  --background-color: var(--mab-background-color-dark);
+  --text-color: var(--mab-primary-text-dark);
   --border-color: var(--mab-secondary-dark);
 }
 
-.btn-primary {
+/*.btn-primary {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
-}
+}*/

@@ -1,3 +1,14 @@
+@use '@angular/material' as mat;
+
+
+:root {
+  @include mat.card-overrides((
+    subtitle-text-color: var(--text-color),
+    elevated-container-color: var(--background-color),
+  ));
+}
+
+/* Card Styling */
 .mat-card {
   max-width: var(--card-max-width);
   width: var(--card-width);
@@ -8,4 +19,6 @@
   margin: var(--card-margin);
   background-color: var(--primary-color);
   color: var(--text-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
